@@ -17,7 +17,7 @@ namespace CompileTech.Common.Helpers
         {
             var sb = new StringBuilder();
             var resourceKeys = CultureToDictionary<T>(CultureInfo.CurrentCulture).Select(r => $"'{r.Key}'").ToList();
-            resourceKeys.Insert(0, string.Empty);
+            resourceKeys.Insert(0, "''");
 
             sb.AppendLine($"/* Generated File ({DateTime.Now:MM/dd/yyyy hh:mm:ss tt 'UTC'z}) */");
             sb.AppendLine("export type { ResourceKey };");
