@@ -10,7 +10,7 @@
         <Description>CompileTech's shared library with useful extensions and other helpers.</Description>
         <RepositoryUrl>https://github.com/CompileTech/CompileTech.Common</RepositoryUrl>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-        <PackageVersion>0.0.8</PackageVersion>
+        <PackageVersion>0.0.9</PackageVersion>
     </PropertyGroup>
 
 </Project>

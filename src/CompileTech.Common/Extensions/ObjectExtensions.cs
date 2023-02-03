@@ -4,20 +4,20 @@ namespace CompileTech.Common.Extensions
 {
     public static class ObjectExtensions
     {
-        public static string ToStringCheckForNull(this object str)
+        public static string ToStringCheckForNull(this object? str)
         {
             if (str != null) return str.ToString();
             return string.Empty;
         }
 
-        public static int ToInt(this object i)
+        public static int ToInt(this object? i)
         {
             if (i != null && i.ToStringCheckForNull() != string.Empty)
                 return Convert.ToInt32(i);
             return 0;
         }
 
-        public static int? ToIntOrNull(this object i)
+        public static int? ToIntOrNull(this object? i)
         {
             if (i != null && i.ToStringCheckForNull() != string.Empty)
                 return Convert.ToInt32(i);
